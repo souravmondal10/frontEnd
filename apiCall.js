@@ -1,6 +1,6 @@
 // Variable to hold request
 var request;
-var remoteApiHost = "http://192.168.0.128:8081/api/"
+var remoteApiHost = "http://192.168.0.128:8081/"
 // Bind to the submit event of our form
 $("#userAdd").submit(function (event) {
 
