@@ -1,4 +1,4 @@
-FROM UBUNTU
+FROM ubuntu
 
 #USER root
 
