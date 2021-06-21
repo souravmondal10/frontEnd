@@ -1,6 +1,6 @@
 // Variable to hold request
 var request;
-var remoteApiHost = "http://192.168.0.128:8081/"
+var remoteApiHost = "API_HOST_XXX";
 // Bind to the submit event of our form
 $("#userAdd").submit(function (event) {
 
@@ -58,14 +58,14 @@ $("#userAdd").submit(function (event) {
 });
 
 function showUsers(source) {
-    $.get(remoteApiHost + "showUsers.php" + "?source="+source, function (data, status) {
+    $.get(remoteApiHost + "showUsers.php" + "?source=" + source, function (data, status) {
         //console.log("Data: " + data + "\nStatus: " + status);
         allUsersHtml = '';
-        $.each(data, function(index,element) {
-            allUsersHtml = allUsersHtml+ '<tr>\n' +
-                '            <th scope="row">'+element.userId+'</th>\n' +
-                '            <td>'+element.username+'</td>\n' +
-                '            <td>'+element.useremail+'</td>\n' +
+        $.each(data, function (index, element) {
+            allUsersHtml = allUsersHtml + '<tr>\n' +
+                '            <th scope="row">' + element.userId + '</th>\n' +
+                '            <td>' + element.username + '</td>\n' +
+                '            <td>' + element.useremail + '</td>\n' +
                 '        </tr>';
         });
         $('#allUsersData').html(allUsersHtml);
