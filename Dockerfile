@@ -16,4 +16,4 @@ COPY ./nginx.conf /etc/nginx/sites-available/default
 COPY ./index.php ./index.php
 COPY ./apiCall.js ./apiCall.js
 
-CMD ["nginx", "-g", "demon off;"]
+CMD ["nginx", "-g", "daemon off;"]
