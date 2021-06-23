@@ -5,9 +5,7 @@ services:
   - docker
 
 before_install:
-  - sed -i "s/API_HOST_XXX/$API_HOST/g" apiCall.js
-  - cat apiCall.js
-  - - docker build -t souravmondal10/frontend .
+  - docker build -t souravmondal10/frontend .
 
 after_success:
   # Log in to the docker CLI
