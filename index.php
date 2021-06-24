@@ -1,3 +1,8 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
 <html>
 <head>
     <title>User Base App</title>
@@ -18,8 +23,10 @@
         <button type="submit" class="btn btn-primary">Add User</button>
     </form>
     <hr/>
-    <button type="button" class="btn btn-primary" id="getusersdb" onClick="showUsers('database');">SHOW Database Users</button>
-    <button type="button" class="btn btn-primary" id="getusersredis" onClick="showUsers('redis');">SHOW Redis Users</button>
+    <button type="button" class="btn btn-primary" id="getusersdb" onClick="showUsers('database');">SHOW Database Users
+    </button>
+    <button type="button" class="btn btn-primary" id="getusersredis" onClick="showUsers('redis');">SHOW Redis Users
+    </button>
     <table class="table">
         <thead>
         <tr>
